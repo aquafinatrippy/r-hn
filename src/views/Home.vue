@@ -4,7 +4,18 @@
     <div class="row">
       <form class="col s12">
         <div class="row">
-          <label>Input file</label>
+          <label>Info file</label>
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Browse</span>
+              <input type="file" />
+            </div>
+
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="Upload file" />
+            </div>
+          </div>
+          <label>3D model</label>
           <div class="file-field input-field">
             <div class="btn">
               <span>Browse</span>

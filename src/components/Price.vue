@@ -1,5 +1,13 @@
 <template>
   <div class="container">
+    <div class="row">
+      <div class="col s6">
+        <model-obj src="./door.obj"></model-obj>
+      </div>
+      <div class="col s6">
+        <div class="box"></div>
+      </div>
+    </div>
     <table>
       <thead>
         <tr>
@@ -31,7 +39,20 @@
 </template>
 
 <script>
+import { ModelObj } from "vue-3d-model";
 export default {
-  name: "Price"
+  name: "Price",
+  components: {
+    ModelObj
+  }
 };
 </script>
+
+<style lang="scss" scoped>
+.box {
+  border: 1px black solid;
+  width: 160px;
+  height: 300px;
+  background-color: grey;
+}
+</style>
